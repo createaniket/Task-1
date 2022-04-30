@@ -17,7 +17,7 @@ app.set("view engine", "hbs")
 
 app.get('', (req, res) => {
 
-    res.render('index.hbs', {
+    res.render('index', {
 
         Title: 'Aniket Pratap Singh',
         details:'B.tech'
@@ -30,7 +30,7 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
 
-    res.send( {
+    res.render( {
 
         Title: 'This is about',
         details: 'ofcrs about'

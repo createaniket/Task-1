@@ -8,7 +8,7 @@ const app = express()
 // path.join( index)
 console.log(__dirname)
 console.log(__filename)
-
+const port = process.env.PORT || 3000
 
 
 
@@ -48,8 +48,8 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
 
-    console.log('hi ayush port has been started at 3000')
+    console.log('hi ayush port has been started at' + port)
 
 })
